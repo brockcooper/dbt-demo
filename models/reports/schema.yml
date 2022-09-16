@@ -2,20 +2,15 @@
 version: 2
 
 # models:
-#     - name: my_first_dbt_model
-#       description: "A starter dbt model"
+#     - name: weather_by_trips_all_time
+#       description: "Report that aggregates all trips by weather type"
 #       columns:
-#           - name: id
-#             description: "The primary key for this table"
+#           - name: conditions
+#             description: "Weather condition"
 #             tests:
 #                 - unique
 #                 - not_null
-
-#     - name: my_second_dbt_model
-#       description: "A starter dbt model"
-#       columns:
-#           - name: id
-#             description: "The primary key for this table"
+#           - name: num_trips
+#             description: "Number of trips aggregated for all-time"
 #             tests:
-#                 - unique
 #                 - not_null
