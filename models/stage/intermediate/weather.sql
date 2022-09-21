@@ -1,7 +1,8 @@
 {{ config(tags=["on_deploy"]) }}
 
-SELECT
-    v:time::timestamp AS observation_time
+SELECT DISTINCT
+    MD5(v:city.id::varchar || v:time::varchar) AS observation_key
+    ,v:time::timestamp AS observation_time
     ,v:city.id::int AS city_id
     ,v:city.name::string AS city_name
     ,v:city.country::string AS country
@@ -16,4 +17,5 @@ SELECT
     ,v:weather[0].icon::string AS weather_icon
     ,v:wind.deg::float AS wind_dir
     ,v:wind.speed::float AS wind_speed
+    ,v:wind.speed::float AS wind_speed_2
 FROM data_lake_dev.helpers.json_weather_data
