@@ -1,8 +1,8 @@
 1. Walkthrough the purpose of dbt (cloud vs open-source)
-2. Show promoting current dev (weather) to prod with PR
+2. Show promoting current dev (weather, do dbt run) to prod with PR
 3. Add report (below) and show the full dev process with PR to main
-4. Show testing
-5. Show docs
+4. Show testing - dbt test
+5. Show docs - dbt docs generate
 
 weather_by_trips_all_time.sql
 

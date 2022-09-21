@@ -17,4 +17,5 @@ SELECT DISTINCT
     ,v:weather[0].icon::string AS weather_icon
     ,v:wind.deg::float AS wind_dir
     ,v:wind.speed::float AS wind_speed
+    ,v:wind.speed::float AS wind_speed_2
 FROM data_lake_dev.helpers.json_weather_data
